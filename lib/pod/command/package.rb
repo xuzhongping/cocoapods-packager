@@ -1,7 +1,7 @@
 require 'tmpdir'
 module Pod
   class Command
-    class PackagePro < Command
+    class PackageHira < Command
       self.summary = 'Package a podspec into a static library.'
       self.arguments = [
         CLAide::Argument.new('NAME', true),

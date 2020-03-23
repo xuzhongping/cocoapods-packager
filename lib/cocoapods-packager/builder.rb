@@ -283,7 +283,7 @@ MAP
 
     def expand_paths(path_specs)
       path_specs.map do |path_spec|
-        Dir.glob(File.join(@source_dir, path_spec))
+        Dir.glob(File.join(@static_sandbox_root, @spec.name, path_spec))
       end
     end
 
